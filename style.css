@@ -1,4 +1,6 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -77,7 +79,7 @@ small a {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 25px;
 }
 
@@ -118,10 +120,18 @@ small a {
 
 .column {
   float: left;
-  width: 33.33%;
   padding: 10px;
 }
 
+.left, .right {
+  width: 35%;
+}
+
+.middle {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
