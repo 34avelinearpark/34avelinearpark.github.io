@@ -2,40 +2,72 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Community Support - 34th Ave Linear Park</title>
+		<title>Support for 34th Ave Linear Park</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <script src="filter.js"></script>
+    <script src="filter.js" type="text/JavaScript"></script>
   </head>
 
   <body>
     <div class="header">
-      <img src="https://34avelinearpark.github.io/assets/images/34th-ave-logo.png" alt="34th Ave Linear Park logo">
-      <div class="header-right">
-        <a href="https://www.34avelinearpark.com" target="_blank">Petition</a>
+      <a href="https://www.34avelinearpark.com" target="_blank"><img src="https://34avelinearpark.github.io/assets/images/34th-ave-logo.png" alt="34th Ave Linear Park logo"></a>
+      <div class="headerRight">
+        <a href="https://www.34avelinearpark.com" target="_blank">Our Petition</a>
         <a href="https://www.instagram.com/34avelinearpark/" target="_blank"><i class="fa fa-instagram" style="font-size:32px"></i></a>
       </div>
     </div>
 
     <div style="padding: 25px">
-      <h1><span style="color: #fff;">Community Support for a Linear Park in Jackson Heights</span></h1><br>
-      <div class="text-border" style="text-align: left"><p><span style="color: #fff;">Since the launch of this website in May 2021, over 2,500 people have signed our petition for a permanent park on 34th Avenue. The potential in a new open space in our Jackson Heights has the drawn the imagination and enthusiasm of our neighbors and fellow open space advocates. A selection of the comments submitted via the the petition are shared below.</span></p></div><br>
+      <h1>Support for a Linear Park in Jackson Heights</span></h1><br>
+      <div class="textBox" style="text-align: left"><p>Since the launch of our petition in May 2021, over 2,500 people have signed on in support of a permanent park on 34th Avenue, currently home to one of the city's most successful Open Streets. As our community recovers from the Covid-19 pandemic, the potential for new, permanent greenspace in Jackson Heights has activated the imagination of our neighbors and fellow open space advocates and energized a discussion about environmental equity. A selection of the comments submitted via the the petition are shared below.</p></div><br>
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="btn" onclick="filterSelection('open-space')">Open Space</button>
+        <button class="btn" onclick="filterSelection('health-safety')">Health &amp; Safety</button>
+        <button class="btn" onclick="filterSelection('community')"> Community</button>
+        <button class="btn" onclick="filterSelection('visions')">Visions</button>
+      </div>
+
+      <div class="filterContainer">
+        <div class="filterDiv open-space show">x&nbsp;<b>The Jackson Heights community has made the 34th Avenue Open Street its very own</b> with personal touches ranging from gardens to activity spaces for all ages.&nbsp;<b>As we look to the future, innovative infrastructural and design changes are needed </b>to sustain + improve upon the success of the all-volunteer Open Streets program, especially in today’s climate change reality. <b>JH still ranks among the lowest</b> in per capita green space.</div>
+        <div class="filterDiv open-space health-safety show">x open space<br>x health &amp; safety<br><br><span style="color: #000;">“I used to live on 74 St and 32 Ave, I know this project will benefit so many families and friends that live around. The neighborhood needs more parks an green areas for walking and exercise without the danger of cars constantly passing around. Thank you for this initiative!”</span></div>
+        <div class="filterDiv open-space health-safety community show">x open space&nbsp;&nbsp;x health &amp; safety<br>x&nbsp;community<br><br><span style="color: #000;">“Apoyo la idea de generar más espacios recreativos y verdes en nuestra comunidad, esto nos ayuda también a reducir el CO2, fomentar espacios más adaptados al peatón, espacios recreativos y de interacción para los niños y las escuelas ubicadas en nuestro sector, también inventiva a las personas a mantenerse activas físicamente, entre otros beneficios más.”</span></div>
+        <div class="filterDiv open-space show">x open space<br><br><span style="color: #000;">“The 34th Street promenade is an incredible improvement to the Jackson Heights neighborhood. With so little existing dedicated green space in the neighborhood, 34th Ave for pedestrians opens up the whole neighborhood in a important community-building way.”</span></div>
+        <div class="filterDiv open-space show">x open space<br><br><span style="color: #000;">"I think a linear park would benefit Jackson Heights immensely. Most of the green space in our neighborhood is private and the majority of residents do not have access to it. Jackson Heights desperately needs more public green space, and a linear park would make our community healthier and more equitable. Let's dream big and improve our neighborhood!"</span></div>
+        <div class="filterDiv open-space animals show">Mustang</div>
+        <div class="filterDiv colors show">Blue</div>
+        <div class="filterDiv animals show">Cat</div>
+        <div class="filterDiv animals show">Dog</div>
+        <div class="filterDiv fruits show">Melon</div>
+        <div class="filterDiv fruits animals show">Kiwi</div>
+        <div class="filterDiv fruits show">Banana</div>
+        <div class="filterDiv fruits show">Lemon</div>
+        <div class="filterDiv visions show">x&nbsp;visions<br><br><span style="color: #000;">"I dream of a linear park, with a nice 2-way bike path and a separate area for walking, playing. Each block will probably need its own treatment, as every block is different from the next, but it could be so wonderful. I hope city leaders help us realize this vision."</span></div>
+      </div>
+    </div>
 
       <div class="footer">
-          <div class="footer-left">We are <b>Friends of 34th Avenue Linear Park</b>, a collective of Jackson Heights residents from different backgrounds and different parts of the neighborhood. Among us are public school parents, students, immigrants, residents of 34th Avenue, and people who have called Jackson Heights home for their entire lives. We have banded together as volunteer organizers for a common cause:<br><br><b>To support the creation of a linear park on 34th Avenue.</b><br><br>
-          <div class="text-border-rounded"><a href="https://www.34avelinearpark.com/about" target="_blank">Learn more about us here.</a><br></div></div>
-          <div class="footer-right">
-            <div class="text-border-rounded"><a href="https://www.34avelinearpark.com/petition-english" target="_blank">Sign Our Petition</a></div><br>
-            <div class="text-border-rounded"><a href="https://www.34avelinearpark.com/events" target="_blank">Events</a></div><br>
+          <div class="footerLeft">
+            We are <b>Friends of 34th Avenue Linear Park</b>, a collective of Jackson Heights residents from different backgrounds and different parts of the neighborhood. Among us are public school parents, students, immigrants, residents of 34th Avenue, and people who have called Jackson Heights home for their entire lives. We have banded together as volunteer organizers for a common cause:<br><br><b>To support the creation of a linear park on 34th Avenue.</b><br><br><a href="https://www.34avelinearpark.com/about" target="_blank">Learn more about us here.</a><br>
+          </div>
+          <div class="footerRight">
             <div class="text-border-rounded"><a href="https://www.34avelinearpark.com/faq" target="_blank">FAQ</a></div><br>
             <div class="text-border-rounded"><a href="https://www.34avelinearpark.com/media-coverage" target="_blank">Media Coverage</a></div><br>
             <div class="text-border-rounded"><a href="https://www.34avelinearpark.com/supporters" target="_blank">Our Supporters</a></div>
           </div>
-          <hr>
-          <i>Design by Cybele Grandjean, <a href="http://area-of-practice.com/" target="_blank">area-of-practice.com</a><br>Photograph by Lorie Reilly, <a href="https://www.instagram.com/loriereilly/" target="_blank">@loriereilly</a><br>GitHub Page by R.N. Zaman, <a href="https://rawnaknyc.com/" target="_blank">rawnaknyc.com</a></i>
         </div>
 
-      </body>
-      </html>
+    <div style="padding: 5px 25px 5px 25px"><hr>
+      <small>
+        <i>Design by Cybele Grandjean, <a href="http://area-of-practice.com/" target="_blank">area-of-practice.com</a>
+        <br>Photograph by Lorie Reilly, <a href="https://www.instagram.com/loriereilly/" target="_blank">@loriereilly</a>
+        <br>Page by R.N. Zaman, <a href="https://rawnaknyc.com/" target="_blank">rawnaknyc.com</a></i>
+        <br>v.2022-01
+      </small>
+    </div>
+
+    </body>
+    </html>

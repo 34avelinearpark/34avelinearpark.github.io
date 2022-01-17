@@ -25,17 +25,16 @@ b, strong {
 }
 
 hr {
-	background: #000;
+	background: #fff;
 	border: 0;
 	height: 1px;
-  line-height: 100px;
 }
 
 h1 {
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 28px;
 	line-height: 1.1;
-	color: #000;
+	color: #fff;
 }
 
 h2 {
@@ -47,20 +46,19 @@ h2 {
 
 p {
   font-size: 21px;
-  color: #000;
+  color: #fff;
   line-height: 1.2;
 }
 
 small {
 	font-family: 'Space Grotesk', sans-serif;
-  display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.4;
-	color: #000;
+	color: #fff;
 }
 
 small a {
-	color: #000;
+	color: inherit;
   text-decoration: underline;
 }
 
@@ -86,8 +84,9 @@ small a {
   text-decoration: underline;
 }
 
-.header-right {
+.headerRight {
   float: right;
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -97,21 +96,17 @@ small a {
     text-align: left;
   }
 
-  .header-right {
-    float: none;
-  }
-
-  .footer-right {
+  .headerRight {
     float: none;
   }
 }
 
-.text-border {
+.textBox {
 	background-color: #000;
   opacity: 80%;
   width: 40%;
   height: auto;
-  padding: 15px;
+  padding: 5px 25px 5px 25px;
 }
 
 .footer {
@@ -119,17 +114,21 @@ small a {
   background-color: #00D079;
   padding: 30px 100px 30px 100px;
   margin-top: auto;
-  font-size: small;
+  font-style: normal;
   width: 100%;
   height: 100%;
 }
 
-.footer-left {
+.footer a {
+  color: #000;
+}
+
+.footerLeft {
   max-width: 35%;
   float: left;
 }
 
-.footer-right {
+.footerRight {
   max-width: 30%;
   float: right;
 }
@@ -165,7 +164,7 @@ small a {
   display: block;
 }
 
-.filter-container {
+.filterContainer {
   margin-top: 20px;
   overflow: hidden;
 }
